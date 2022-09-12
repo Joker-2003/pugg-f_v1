@@ -1,0 +1,221 @@
+.lb{
+	background-color: var(--primary-color);
+	min-height: 100vh;
+	height: min-content;
+	width: 100vw;
+}
+
+.lb-game-option{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0px;
+	width: 100vw;
+
+}
+
+.lb-game-btn{
+	background-color: var(--primary-color);
+	color : white;
+	font-size: 40px ;
+	border: 2px solid rgb(107, 56, 56);
+	padding: 20px 60px;
+	border-radius: 50px;
+
+}
+
+.active-gm{
+	background-color: var(--secondary-color);
+	box-shadow:         inset 6px 6px 6px #581e1e ;
+}
+
+.lb-game-btn:hover{
+	
+	border: 2px solid rgb(173, 77, 77);
+}
+
+.lb-header{
+	display : flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+	color: white;
+
+}
+.lb-header-left{
+	display : flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0vw 7vw;
+	
+}
+.lb-header-right{
+	display : flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0vw 7vw;
+}
+.lb-title{
+	font-size: 60px;
+    padding: 0px 0px 0px 20px;
+}
+
+.lb-content{
+	display : flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	height: 100%;
+
+}
+
+.lb-row-wrapper{
+	height: 8vh;
+	max-width: 1400px;
+	width : 90vw;
+	color : white;
+	display : flex;
+	justify-content:space-between;
+	align-items: center;
+	margin : 5px;
+}
+.lb-rank{
+	font-size : 5vh;
+	border-radius: 50%;
+	width: 6vh;
+	height: 6vh;
+	background-color: var(--secondary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow:         inset 6px 6px 6px #581e1e ;
+	text-shadow:  0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+.lb-row{
+	min-height: 80px;
+max-width: 1250px;
+width: 86.5vw;
+background-color:rgb(71, 71, 71) ;
+border-radius: 50px;
+box-shadow:         inset 6px 6px 6px #000000 ;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 6vh;
+color: whitesmoke;
+font-size: 35px;
+text-shadow:  0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+margin : 10px;
+padding: 5px 0 ;
+}
+
+.lb-row:hover{
+	background-color: rgb(44, 44, 44);
+}
+.lb-row-left{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 70%;
+}
+.lb-avatar{
+	min-height: 60px;
+	min-width: 60px;
+	width: 5vh;
+	height: 5vh;
+	border-radius: 50%;
+}
+.lb-row-right{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 30%;
+}
+.lb-username{
+	font-weight: 700;
+}
+.lb-av-w{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+width: 25%;
+}
+.lb-un-w{
+	width: 60%;
+}
+.lb-sc-w{
+	width: 40%;
+}
+.lb-pr-w{
+	width: 40%;
+}
+
+
+@media screen and (max-width : 1000px) {
+	.lb-game-btn{
+		font-size: 20px ;
+		padding: 20px 20px;
+	}
+	.lb-logo{
+		width: 70px;
+		height: 70px;
+	}
+	.lb-title{
+		font-size: 40px;
+	}
+	.lb-username
+	{
+		font-size: 20px;
+	}
+	.lb-score{
+		font-size: 20px;
+	}
+	.lb-prize{
+		font-size: 20px;
+	}
+	.time-b{
+		font-size: 10px;
+		color: white;
+		padding: 10px 10px;
+		margin: 5px;
+	}
+	.lb-header-right{
+		padding: 0vw 0vw;
+	}
+
+	.min-week{
+		font-size: 10px;
+		color: white;
+		padding: 10px 20px;
+		margin: 5px;
+	}
+}
+
+.time-b{
+	margin: 15px;
+}
+
+.lb-game-btn:disabled{
+	background-color: rgb(71, 71, 71);
+	border: 2px solid rgb(71, 71, 71);
+	color: #000000;
+}
+
+.lb-unflag {
+	background-color: green;
+	border: #000000;
+	color: white;
+	font-size: 20px;
+}
+
+.lb-flag {
+	background-color: red;
+	border: #000000;
+	color : white;
+	font-size: 20px;
+}

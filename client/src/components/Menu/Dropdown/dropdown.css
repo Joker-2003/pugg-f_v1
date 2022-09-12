@@ -1,0 +1,96 @@
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	top : 150px;
+
+	position: absolute;
+	background-color: var(--secondary-color);
+	min-width: 120px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 0;
+	z-index: 1;
+	border-radius: 20px;
+  }
+  .dropdown-content > p{
+	padding: 10px 16px;
+	margin: 0;
+  }
+  .dropdown-content > p:hover {
+	background-color: #454545;
+
+  }
+
+  .desktop > .dropdown {
+	font-size: 30px;
+  }
+
+  .popup-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.473);
+  }
+
+  .popup-body{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 1000px;
+	max-width: 600px;
+	width: 80%;
+	height: 80%;
+	background-color: var(--secondary-color);
+	color : black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+  }
+ .popup-heading{
+	font-size: 40px;
+	text-align: center;
+	filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+  }
+ 
+.popup-link{
+	text-align: center;
+	font-size: 30px;
+	margin: 10px;
+  }
+  .popup-link:hover{
+	color: var(--primary-color);
+	font-size: 34px;
+  }
+
+  .close-popup{
+	position: relative;
+	display: inline-block;
+	padding: 24px 32px;
+	border: 0;
+	text-decoration: none;
+	border-radius: 15px;
+	background-color: rgba(0, 21, 251, 0.1);
+	border: 1px solid rgba(255,255,255,0.1);
+	backdrop-filter: blur(30px);
+	color: rgba(255,255,255,0.8);
+	font-size: 60px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	cursor: pointer;
+	text-transform: uppercase;
+	
+	margin : 10px;
+	box-shadow: 4px 4px 3px rgb(0, 0, 0);
+  }
+  .close-popup:hover {
+	background-color: rgba(35, 52, 248, 0.1);
+
+  }
